@@ -169,13 +169,13 @@
             // function to set random valentine image
             let cnt = 0;
             function setRandomValentine() {
+                if (cnt % VALENTINE_SET.length == 0) {
+                    cnt = 0
+                }
                 const randomIndex = Math.floor(Math.random() * VALENTINE_SET.length);
                 const selected = VALENTINE_SET[cnt];
                 valentineImg.src = selected.url;
                 cnt++;
-                if (cnt % VALENTINE_SET.length == 0) {
-                    cnt = 0
-                }
                 // update caption: keep heart icons but change text
                 //valentineCaption.innerHTML = `<i class="fas fa-heart"></i> ${selected.caption} <i class="fas fa-heart"></i>`;
             }
@@ -193,5 +193,22 @@
             // ---------- BUTTON INTERACTIONS (exactly as reference) ----------
             // extra: click on robot mode: on also changes something subtle? just feedback
             // already handled
+            function triggerDownload() {
+                var element = document.createElement('a');
+                element.setAttribute('href', VALENTINE_SET[cnt-1].url);
+                element.setAttribute('download', VALENTINE_SET[cnt-1].url);
+                element.style.display = 'none';
+                document.body.appendChild(element);
+                // Происходит клик, словно совершил его сам программирующий ниндзя
+                element.click();
+                document.body.removeChild(element);
+                console.log("aaaa");
+            }
 
+            const downloadBtn = document.getElementById('downLoadBtn');
+            downloadBtn.addEventListener('click', function(e) {
+                triggerDownload();
+                // little haptic feedback
+            });
         })();
+        
