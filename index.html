@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robot valentines · floating hearts + valentines cards</title>
+    <!-- Font Awesome 6 (free) for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- canvas for floating hearts – romantic atmosphere -->
+    <canvas id="hearts-canvas"></canvas>
+
+    <!-- main panel – robot valentines with rotating image cards -->
+    <div class="valentine-panel">
+
+        <!-- robot headline exactly: ROBOT VALENTINES with icons -->
+        <div class="robot-headline">
+            <i class="fas fa-robot"></i> <span>XOR</span> VALENTINES <i class="fas fa-heart"></i>
+        </div>
+
+        <!-- ============================================= -->
+        <!-- VALENTINE CARD SECTION (IMAGES instead of text) -->
+        <!-- ============================================= -->
+        <div class="valentine-card-container">
+            <div class="valentine-card" id="valentineCard">
+                <!-- image will be injected by JavaScript -->
+                <img id="valentineImg" class="valentine-image" src="" alt="valentine illustration">
+                <!-- tiny shuffle button for more valentines (fun) -->
+                <button class="shuffle-button" id="shuffleValentineBtn">
+                    <i class="fas fa-random"></i> Следующая валентинка
+                </button>
+                 <div class="links">
+                    <a href="https://t.me/xor_journal">@xor_journal</a>
+                 </div>
+            </div>
+        </div>
+        <!-- binary code robot valentine (from your reference) -->
+        <div class="binary-heart">
+            <i class="fas"></i>01110010 01101111 01100010 01101111 01110100 <br> 01000000 01101100 01101111 01110110 01100101<i class="fas"></i>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
