@@ -162,10 +162,22 @@
             .robot-btn { font-size: 1.1rem; padding: 0.7rem 1.2rem; }
             .valentine-image { max-width: 260px; }
         }
+        
+        a{
+            margin: 20px;
+            color: #08fff3;
+        }
+        .links {
+            margin-top: 40px;
+            padding-top: 20px;
+        }
 
         @media (max-width: 480px) {
             .valentine-panel { padding: 1.8rem 1.2rem; }
-            .robot-headline { font-size: 1.9rem; }
+            .robot-headline { 
+                font-size: 0.9rem;
+                word-break: break-all;
+            }
             .robot-btn { font-size: 1.1rem; padding: 0.7rem 1.2rem; }
             .valentine-image { max-width: 260px; }
             .valentine-image {
@@ -229,4 +241,9 @@
             text-transform: uppercase;
             letter-spacing: 3px;
         }
+        .robot-headline i {
+            color: #ffffff;
+            font-size: 1.2rem;
+            filter: drop-shadow(0 0 8px #f9f9f9);
         }
+    }

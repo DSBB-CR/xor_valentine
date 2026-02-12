@@ -167,10 +167,15 @@
             const shuffleBtn = document.getElementById('shuffleValentineBtn');
 
             // function to set random valentine image
+            let cnt = 0;
             function setRandomValentine() {
                 const randomIndex = Math.floor(Math.random() * VALENTINE_SET.length);
-                const selected = VALENTINE_SET[randomIndex];
+                const selected = VALENTINE_SET[cnt];
                 valentineImg.src = selected.url;
+                cnt++;
+                if (cnt % VALENTINE_SET.length == 0) {
+                    cnt = 0
+                }
                 // update caption: keep heart icons but change text
                 //valentineCaption.innerHTML = `<i class="fas fa-heart"></i> ${selected.caption} <i class="fas fa-heart"></i>`;
             }
