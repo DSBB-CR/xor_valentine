@@ -13,7 +13,7 @@
                 canvas.width = width;
                 canvas.height = height;
             }
-
+            /*
             const MAX_HEARTS = 0;
             const HEART_COLORS = [
                 'rgba(255, 120, 150, ', 
@@ -95,7 +95,7 @@
             initCanvas();
             initHearts();
             animateHearts();
-
+    */
             // ---------- VALENTINE IMAGES ARRAY ----------
             // images based on your references: 
             // "AIME accuracy / test-time compute / you're the O1 for me" 
@@ -152,11 +152,59 @@
                     caption: "С тобой у меня всегда 100% аптайм"
                 },
                 {
-                    url: "img/008.jpg", 
+                    url: "img/009.jpg", 
                     caption: "С тобой у меня всегда 100% аптайм"
                 },
                 {
-                    url: "img/009.jpg", 
+                    url: "img/010.png", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/011.png", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/012.png", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/013.png", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/014.png", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/015.JPEG", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/016.JPEG", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/017.png", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/018.JPEG", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/019.JPEG", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/020.JPEG", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/021.JPEG", 
+                    caption: "С тобой у меня всегда 100% аптайм"
+                },
+                {
+                    url: "img/022.JPEG", 
                     caption: "С тобой у меня всегда 100% аптайм"
                 }
             ];
